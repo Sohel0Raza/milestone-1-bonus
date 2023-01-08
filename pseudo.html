@@ -11,6 +11,7 @@
             font-size: 700;
             background-color: aliceblue;
             text-align: center;
+            display: inline;
         }
         .last-email:focus{
             width: 300px;
@@ -25,6 +26,57 @@
             color: aqua;
             font-size: 800;
         }
+
+        li:first-child{
+            color: cadetblue;
+        }
+
+        li:last-child{
+            color: rgb(4, 43, 43);
+        }
+
+        li:nth-child(2n){
+            background-color: greenyellow;
+        }
+
+        li:nth-child(2n+1){
+            background-color: rgb(151, 158, 141);
+        }
+
+        h3::before{
+            content: 'Hi';
+        }
+
+       h3::after{
+        content:'love';
+        background-color: yellow;
+        font-weight: 200px;
+        font-size: large;
+       }
+
+       .summing div{
+        width: 400px;
+        height: 200px;
+        border: 1px dashed green;
+       }
+
+       #boy{
+        position: relative;
+        z-index: 2;
+       }
+
+       #ring{
+        position: relative;
+        z-index: 1;
+        margin-top: -150px;
+       }
+    
+       #weter{
+        position: relative;
+        margin-top: -150px;
+       }
+
+
     </style>
 </head>
 <body>
@@ -38,5 +90,35 @@
 
     <a href="https://www.w3schools.com/html/html_forms.asp">w3school</a>
     <a href="https://www.instagram.com/">Instagram</a>
+
+    <ul>
+        <li>Himu</li>
+        <li>Mim</li>
+        <li>Sohel</li>
+        <li>Raza</li>
+        <li>Sajid</li>
+        <li>Tazim</li>
+    </ul>
+    <h3>Bangladesh is butiful contury 1</h3>
+    <h3>Bangladesh is butiful contury 2</h3>
+    <h3>Bangladesh is butiful contury 3</h3>
+    <h3>Bangladesh is butiful contury 4</h3>
+    <h3>Bangladesh is butiful contury 5</h3>
+    <section >
+        <h4>My name is So hel</h3>
+        <h4>My name is So hel</h3>
+        <h4>My name is So hel</h3>
+        <h4>My name is So hel</h3>
+        <h4>My name is So hel</h3>
+        <h4>My name is So hel</h3>
+    </section>
+
+    <section class="summing">
+        <div id="boy"><img src="./images/boy.svg" alt="" srcset=""></div>
+        <div id="ring"><img src="./images/ring.svg" alt="" srcset=""></div>
+        <div id="weter"><img src="./images/water.svg" alt="" srcset=""></div>
+    </section>
+
+
     </body>
 </html>
